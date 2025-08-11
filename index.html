@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sliding Window Protocol</title>
+
+    <style>
+        /* Main background and text colors */
+        body {
+            background:#1a1a1a;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        /* Title styling */
+        .big-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 2rem;
+            background: linear-gradient(90deg, #00ff87, #60efff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 35px 0;
+        }
+
+        /* Description text styling */
+        .description {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 800px;
+            height: 300;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Button container styling */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        /* Custom button styling */
+        .custom-button {
+            background: linear-gradient(135deg, #00ff87, #60efff);
+            border: none;
+            color: black;
+            padding: 30px 50px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            min-width: 350px;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        /* Icon animation */
+        .custom-button svg {
+            transition: transform 0.3s ease;
+        }
+
+        /* Animation on hover */
+        .custom-button:hover svg {
+            transform: rotate(360deg);
+        }
+
+        /* Remove underline on hover */
+        .custom-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 255, 135, 0.2);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Title -->
+    <h1 class="big-title">Sliding Window Protocol</h1>
+
+    <!-- Description -->
+    <div class="description">
+        Sliding Window Technique is a method used to efficiently solve problems that involve defining a window or range in the input data and then moving that window across the data to perform some operation within the window.
+        <br><br>
+        Choose a protocol below to learn more about its implementation and characteristics.
+    </div>
+
+    <!-- Button container -->
+    <div class="button-container">
+        <a href="go_back_n.html" class="custom-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="1 4 1 10 7 10"></polyline>
+                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+            </svg>
+            Go-Back-N Protocol
+        </a>
+        <a href="selective_repeat.html" class="custom-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+            </svg>
+            Selective Repeat Protocol
+        </a>
+    </div>
+    <br><br><br><br><br>
+    <center><h3>By 23BCE507 & 23BCE504</h3></center>
+
+    <!-- Optional JavaScript for custom behaviors (such as button animation or page interactions) can go here -->
+    <script>
+        // Example JS behavior for custom button hover effect
+        document.querySelectorAll('.custom-button').forEach(button => {
+            button.addEventListener('mouseenter', () => {
+                button.style.transform = 'translateY(-5px)';
+                button.style.boxShadow = '0 10px 20px rgba(0, 255, 135, 0.2)';
+            });
+            button.addEventListener('mouseleave', () => {
+                button.style.transform = 'translateY(0)';
+                button.style.boxShadow = '';
+            });
+        });
+    </script>
+
+</body>
+
+</html>
